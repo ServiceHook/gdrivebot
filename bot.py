@@ -73,7 +73,7 @@ else:
 
 # --- BOT SETUP ---
 if API_ID and BOT_TOKEN:
-    bot = TelegramClient('bot_session', int(API_ID), API_HASH).start(bot_token=BOT_TOKEN)
+    bot = TelegramClient('bot_session_v2', int(API_ID), API_HASH).start(bot_token=BOT_TOKEN)
 else:
     print("❌ API_ID or BOT_TOKEN missing")
     exit()
